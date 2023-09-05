@@ -1,81 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 2</title>
-    <link rel="stylesheet" href="/tarea2/css/style.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 class="title"> Grupo 10 </h1>
+        <nav class="navbar">
+            <div class="brand-title"><a href="/">Inicio</a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/eduardo.html">Eduardo Torres</a></li>
+                    <li><a href="/victor.html">Víctor Fuentes</a></li>
+                    <li><a href="/benjamin.html">Benjamín Gonzáles</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-
-    <div class="nav-bg">
-     <nav class="primary-nav content">
-        <a href="/Clase 2/index.html">Inicio</a>
-        <a href="/Clase 2/Nosotros.html">Víctor Fuentes</a>
-        <a href="https://www.uai.cl">Eduardo Torres</a>
-        <a href="#">Benjamin Flores</a>
-     </nav>
-    </div>
-
-    <section class="hero">
-        <div class="contenido-hero">
-        <h2>Clases de Diseño de Software</h2>
-
-        <div class="location">
-        <p>Tarea 2</p>
-        
+    <section class="subheader">
+        Grupo 10: The bois
+    </section>
+    <main>
+        <div class="space card card-shadow">
+            <div class="card-body">
+                Nuestro grupo fue formando a traves del ramo de Diseño de Software.</p>
+                Nuestro objetivo como grupo es incursar en el área del diseño de páginas, de manera que esto nos ayude en el día a día de nuestro futuro como profesionales.
+            </div>
         </div>
- 
-    </section>
 
-    <main class="content shadow">
-        <h2 class="title">Nuestra Información</h2>
+        <div class="space card card-grid">
 
+            <div class="card card-shadow">
+                <div class="card-header card-image">
+                    <img src="./img/eduardo.jpg">
+                </div>
+                <div class="card-body">
+                    Eduardo Torres
+                </div>
+            </div>
 
-        <div class="subjects">
-            <section class="subject">
+            <div class="card card-shadow">
+                <div class="card-header card-image">
+                    <img src="./img/victor.jpg">
+                </div>
+                <div class="card-body">
+                    Victor Fuentes
+                </div>
+            </div>
 
-
-        <h3>Sobre nosotros</h3>
-        <svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-users-group" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-            <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M17 10h2a2 2 0 0 1 2 2v1" />
-            <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
-          </svg>  
-    </div>  
-        <p>Nuestro grupo fue formando a traves del ramo de Diseño de Software.</p>
-        <p>Nuestro objetivo como grupo es incursar en el área del diseño de páginas, de manera que esto nos ayude en el día a día de nuestro futuro como profesionales.</p>
-    </section>
-
-    <h2 class="title">Nuestros Integrantes</h2>
-
-    
-
-    
-
-
-
-        
-    
-
-
-   
-
-
-    <footer>27-08-2023</footer>
-
-   
-
-
+            <div class="card card-shadow">
+                <div class="card-header card-image">
+                    <img src="./img/benjamin.jpg">
+                </div>
+                <div class="card-body">
+                    Benjamín Gonzáles
+                </div>
+            </div>
+        </div>
     </main>
-
 </body>
 </html>
