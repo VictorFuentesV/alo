@@ -12,6 +12,12 @@ export function Navbar() {
                     <Nav.Link to="/eduardo" as ={NavLink}>
                         Eduardo
                     </Nav.Link>
+                    <Nav.Link to="/victor" as ={NavLink}>
+                        Victor
+                    </Nav.Link>
+                    <Nav.Link to="/benjamin" as ={NavLink}>
+                        Benjamin
+                    </Nav.Link>
                 </Nav>
             </Container>
         </NavbarBs>
