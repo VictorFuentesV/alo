@@ -10,7 +10,7 @@ import { Benjamin } from './pages/Benjamin';
 
 function App() {
   return (
-    <>
+    <div className='bg'>
       <Navbar />
       <Container>
         <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/benjamin" element={<Benjamin />} />
         </Routes>
       </Container>
-    </>
+    </div>
   );
 }
 

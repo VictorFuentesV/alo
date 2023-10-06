@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Eduardo Torres",
+        "img": "/imgs/eduardo.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Víctor Fuentes",
+        "img": "/imgs/victor.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Benjamín Gonzales",
+        "img": "/imgs/benjamin.jpg"
+    }
+]
