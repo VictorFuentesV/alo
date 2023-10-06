@@ -1,7 +1,8 @@
 import '../css/Home.css'
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import { useRef } from 'react'
-import { DarkMode } from './DarkMode';
+
+//originalmente planeaba convertir el boton de darkmode en su propio componente, pero no supe como hacerlo funcionar correctamente
 
 export function Navbar() {
     const ref = useRef();
