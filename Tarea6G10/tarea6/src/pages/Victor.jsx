@@ -1,46 +1,56 @@
 import React from "react";
+import fiesta from '../imagenes/fiesta.jpg';
+import gimnasio from '../imagenes/gimnasio.jpg';
+import juegos from '../imagenes/juegos.jpg';
+import perritos from '../imagenes/perritos.jpg';
+import programar from '../imagenes/programar.jpg';
+import viaje from '../imagenes/viaje.jpg';
+import ejercitando from '../imagenes/ejercitando.jpg';
+import estudio from '../imagenes/estudio.jpg';
+import videojuegos from '../imagenes/videojuegos.jpg';
 import '../css/styles.css'
+import { useRef } from "react";
 
 export function Victor() {
+    const ref = useRef();
+
+    const handleClick = () => {
+        const nav = ref.current;
+        nav.classList.toggle('ocultar');
+    };
+
     return(
         <>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tarea4</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <meta
-          name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
         <div className="contenedor">
-          <header>
-            <h1 className="title">Bienvenidos a mi página</h1>
-          </header>
-          <main>
+          <div className="header">
+            <h1 className="titulo-v">Bienvenidos a mi página</h1>
+          </div>
+          <div className="tw-flex tw-flex-col tw-align-center tw-justify-center">
             <div className="txt__fotos">
-              <h2 className="title">Fotos de mis pasatiempos</h2>
+              <h2 className="titulo-v">Fotos de mis pasatiempos</h2>
+              <button className="tw-text-black tw-border-none tw-bg-blue-500 tw-bg-opacity-50 tw-rounded-xl" onClick={handleClick}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+              <path d="M9 9l6 6m0 -6l-6 6" />
+              </svg></button>
             </div>
-            <section>
-              <img src="imagenes/fiesta.jpg" alt="fiesta" />
-              <img src="imagenes/gimnasio.jpg" alt="gimnasio" />
-              <img src="imagenes/juegos.jpg" alt="juegos" />
-              <img src="imagenes/perritos.jpg" alt="perritos" />
-              <img src="imagenes/programar.jpg" alt="programar" />
-              <img src="imagenes/viaje.jpg" alt="viaje" />
-            </section>
+            <div ref={ref}>
+              <div className="ruleta">
+                  <img src={fiesta}></img>
+                  <img src={gimnasio}></img>
+                  <img src={juegos}></img>
+                  <img src={perritos}></img>
+                  <img src={programar}></img>
+                  <img src={viaje}></img>
+              </div>
+            </div>
             <div className="txt__fotos">
               <h2>Cosas sobre Mi</h2>
             </div>
-            <div className="card">
+            <div className="carta">
               <div className="card__perfil">
                 <div className="card__nombre">
-                  <img className="card__img" src="imagenes/estudio.jpg" alt="" />
+                  <img className="card__img" src={estudio}></img>
                   <h2>Aprender nuevas cosas</h2>
                 </div>
                 <hr />
@@ -54,7 +64,7 @@ export function Victor() {
               </div>
               <div className="card__perfil">
                 <div className="card__nombre">
-                  <img className="card__img" src="imagenes/ejercitando.jpg" alt="" />
+                  <img className="card__img" src={ejercitando}></img>
                   <h2>Ir al gimnasio</h2>
                 </div>
                 <hr />
@@ -68,7 +78,7 @@ export function Victor() {
               </div>
               <div className="card__perfil">
                 <div className="card__nombre">
-                  <img className="card__img" src="imagenes/videojuegos.jpg" alt="" />
+                  <img className="card__img" src={videojuegos}></img>
                   <h2>Jugar videojuegos</h2>
                 </div>
                 <hr />
@@ -82,15 +92,9 @@ export function Victor() {
                 </div>
               </div>
             </div>
-          </main>
-          <footer className="content shadow">
-            <address>
-              Nombre:Víctor Hugo Fuentes Villarreal <br />
-              Correo contacto: vicfuentes@alumnos.uai.cl
-            </address>
-          </footer>
+          </div>
         </div>
       </>
       
     )
-}
+} 

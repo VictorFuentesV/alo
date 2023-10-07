@@ -1,99 +1,39 @@
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.ocultar {
+    display: none;
 }
-section{
+
+.ruleta {
     margin-top: 20px;
     display: flex;
-    width: 70%;
+    width: 700px;
     height: 430px;
     box-shadow: 7px 13px 37px #000;
   }
-  section img{
-    width: 10%;
+  .ruleta img{
+    width: 100px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
   }
-  section img:hover{
+  .ruleta img:hover{
     cursor: crosshair;
-    width: 70%;
+    width: 700px;
     opacity: 1;
     filter: contrast(120%);
     box-sizing: border-box;
     max-width: 700px;
   }
 
-.title {
-    width: 99%;
+.titulo-v {
     text-align: center;
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.form-register {
-    width: 80%;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    margin-bottom: 10px;
-}
-
-.form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-
-}
-
-.controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    color: white;
-
-}
-
-.form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-
-}
-
-.form-register .boton {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-}
-
-
-
-.card {
+.carta {
     display: flex;
     gap: 50px;
-    width: 100%;
+    width: 1500px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -141,8 +81,8 @@ section{
     color: white;
 }
 
-hr{
-    width: 100%;
+.hr{
+    width: 440px;
     height: 4px;
     background: #1f53c5;
     margin: 20px 5px;
@@ -152,7 +92,7 @@ hr{
     cursor: crosshair;
     width: 400px;
     opacity: 1;
-    filter: contrast(120%);
+    ;
   }
 
 .card__descripcion {
@@ -161,11 +101,7 @@ hr{
     color: white;
 }
 
-body {
-    background-image: url(../imagenes/fondo.jpg);
-}
-
-header {
+.header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
     background: #ccc;
@@ -192,135 +128,7 @@ header {
     text-decoration-color: #ccc;
 }
 
-#calculadora {
-    height: 390px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
 
-#calculadora form{
-    height: 100%;
-    width: 100%;
-    background-color: #24303c;
-}
-
-
-#calculadora input[type=textfield] {
-    width: 100%;
-    cursor: default;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    padding: 15px;
-    text-align: right;
-    font-size: 50px;
-    border: 0;
-    outline: none;
-    background-color: black;
-}
-
-
-#calculadora input[type=button], input[type=reset]{
-    width: 21%;
-    cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: black;
-    padding: 20px;
-    margin: 4px;
-    border: 0;
-    border-radius:  100%;
-}
-
-#calculadora .grey {
-    background-color: grey !important;
-    color: white !important;
-}
-
-#calculadora .blue {
-    background-color: #1f53c5 !important;
-    color: white !important;
-}
-
-
-*{
-	margin: 0;
-	padding: 0;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body{
-	text-align: center;
-	color: #1f53c5;
-	background-size: cover;
-}
-h1{
-	color: white;
-	padding: 50px;
-}
-.container{
-	background-color: #24303c;
-	max-width: 700px;
-	margin: auto;
-	border: 2px solid #000;
-	border-radius: 20px;
-	display: flex;
-	padding: 50px 0;
-    box-shadow: 7px 13px 37px #000;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.izquierdo{
-	width: 70%;
-	font-size: 80px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.derecha{
-	width: 30%;
-}
-.msj{
-	font-size: 40px;
-	height: 50px;
-}
-.derecha{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.opcion{
-	width: 80px;
-	height: 80px;
-	border: 1px solid  #000;
-	font-size: 50px;
-	margin-bottom: 20px;
-	border-radius: 50%;
-	cursor: pointer;
-	background-color: #000;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.opcion:hover{
-	background-color: #262626;
-}
-
-.contenedor {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.main {
-    width: 70%;
-    box-sizing: border-box;
-}
 
 .shadow {
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
